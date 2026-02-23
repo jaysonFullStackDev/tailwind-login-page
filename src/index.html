@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body
+    class="bg-gradient-to-br from-white via-sky-600 to-white flex justify-center items-center min-h-screen"
+  >
+    <div
+      class="bg-gradient-to-b from-sky-800 via-sky-600 to-white rounded-lg p-5 shadow-lg max-w-sm w-full"
+    >
+      <!-- Login Form -->
+      <div id="login-form">
+        <h1 class="text-white text-center text-3xl font-bold mb-7">LogIn</h1>
+        <form>
+          <div class="mb-4">
+            <label class="text-white">Email</label>
+            <input
+              class="bg-white border w-full rounded-md px-1.5 py-1"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <label class="text-white mb-5">Password</label>
+          <div class="mb-4">
+            <input
+              class="bg-white border w-full rounded-md px-1.5 py-1"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="text-center m-7">
+            <p>
+              Don't have Account?
+              <a
+                class="text-blue-700 font-bold hover:text-blue-500 cursor-pointer"
+                onclick="toggleForm()"
+                >Sign Up</a
+              >
+            </p>
+          </div>
+          <button
+            class="bg-sky-950 text-white p-1 py-2 w-full text-center rounded-md border-2 border-sky-950 hover:bg-sky-800"
+            type="submit"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+
+      <!-- Sign Up Form -->
+      <div id="signup-form" style="display: none">
+        <h1 class="text-white text-center text-3xl font-bold mb-7">Sign Up</h1>
+        <form>
+          <div class="mb-4">
+            <label class="text-white">Full Name</label>
+            <input
+              class="bg-white border w-full rounded-md px-1.5 py-1"
+              type="text"
+              name="fullname"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label class="text-white">Email</label>
+            <input
+              class="bg-white border w-full rounded-md px-1.5 py-1"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label class="text-white">Password</label>
+            <input
+              class="bg-white border w-full rounded-md px-1.5 py-1"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label class="text-white">Confirm Password</label>
+            <input
+              class="bg-white border w-full rounded-md px-1.5 py-1"
+              type="password"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <div class="text-center m-7">
+            <p>
+              Already have an account?
+              <a
+                class="text-blue-700 font-bold hover:text-blue-500 cursor-pointer"
+                onclick="toggleForm()"
+                >Log In</a
+              >
+            </p>
+          </div>
+          <button
+            class="bg-sky-950 text-white p-1 py-2 w-full text-center rounded-md border-2 border-sky-950 hover:bg-sky-800"
+            type="submit"
+          >
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
