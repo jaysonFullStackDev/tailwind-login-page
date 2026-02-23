@@ -19,4 +19,4 @@ This project provides a clean and minimal login interface with basic client-side
 - Basic form validation
 - Easy to customize and extend
 
-## Project Structure
+
